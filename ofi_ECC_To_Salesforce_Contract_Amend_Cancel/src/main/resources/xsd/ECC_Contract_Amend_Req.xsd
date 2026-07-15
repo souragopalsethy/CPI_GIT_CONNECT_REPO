@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="ECC_Contract_Amend_MT">
+   <xsd:complexType>
+      <xsd:sequence>
+         <xsd:element name="Account_SAP_ID" type="xsd:string" minOccurs="0" />
+         <xsd:element name="SF_Opportunity_ID" type="xsd:string" minOccurs="0" />
+         <xsd:element name="Operation" type="xsd:string" minOccurs="0" />
+         <xsd:element name="System" type="xsd:string" minOccurs="0" />
+         <xsd:element name="Product" type="xsd:string" minOccurs="0" />
+         <xsd:element name="Header" minOccurs="0">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Span_ID" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Trace_ID" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="USER_EMAIL_ADDRESS" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="SAP_Contract_No" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="SF_Contract_No" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Commission_Type" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Sales_Document" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Ship_To_Party" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Inco_Terms" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Sales_Plant" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Total_Contract_Qty" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Trader" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Contract_Date_From" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Contract_Date_To" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Weight_Terms" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Sales_Office" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Buyer_Address" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Buyer_PO_NO" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Contract_Type" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Payment_Term" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Total_Contract_Value" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Change_On" type="xsd:string" minOccurs="0" />
+				  <xsd:element name="Order_Basis" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Sales_From_Stock" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Broker" minOccurs="0" maxOccurs="unbounded">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="Broker" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Commission_Type" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Commission" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Commission_Amount" type="xsd:string" minOccurs="0" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="Budget" minOccurs="0" maxOccurs="unbounded">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="Expense_Head" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Calculation_Type" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Budget" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Budget_Amount" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Currency" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="GL_Account" type="xsd:string" minOccurs="0" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="Item" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Item_No" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Material" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Selling_Plant" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Quantity" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="UOM" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Unit_Price" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Pricing_Option" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="OverDelivery_Tolerance" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="UnderDelivery_Tolerance" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Packing" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="No_Of_Bags" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Container_Size" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="No_Of_Containers" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="FCL" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Crop_Year_From" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Crop_Year_To" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="POS" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="POD" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Shipping_Mark" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Shipping_Text" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="SI_Sent_Date" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Broker_Difference" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Buyer_Difference" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="PO_Number" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="PO_Item_Number" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Quality_Type" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="User_Remarks" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Shipment_Month" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Shimpment_Year" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Origin_Of_Goods" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Customer_Mat_Number" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Delivery_Month" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Delivery_Year" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Sample_Code" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Warehouse" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="Condition_Pricing_Unit" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="ScheduleLine" minOccurs="0" maxOccurs="unbounded">
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="Shipment_Month" type="xsd:string" minOccurs="0" />
+                           <xsd:element name="Shipment_Year" type="xsd:string" minOccurs="0" />
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+  </xsd:element> 
+</xsd:schema>

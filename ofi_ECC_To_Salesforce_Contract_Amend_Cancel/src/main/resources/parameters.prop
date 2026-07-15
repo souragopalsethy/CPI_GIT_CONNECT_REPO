@@ -1,0 +1,6 @@
+#Fri Jun 21 11:54:29 UTC 2024
+SF_OAuth_Cred_SIT=SFDC_Client_Credentials_SIT
+SF_Basic_Cred_SIT=SFDC_Basic_User_SIT
+SF_Address_SIT=https\://olam--sit2.sandbox.my.salesforce.com
+Resource_URL_SIT=/services/apexrest/syncContracts/
+SF_Address=

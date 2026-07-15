@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OPPORTUNITY_DETAIL" minOccurs="0" maxOccurs ="1" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SF_Opportunity_Owner_Email" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="SF_ACCOUNT_SAP_ID" type="xs:unsignedInt" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="SF_Account_Name" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="OPPORTUNITY_NUMBER" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="OPPORTUNITY_NAME" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="OPPORTUNITY_ID" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="INTERFACE_MODE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+              <xs:element name="CONTRACT_REQUEST">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ITEM" minOccurs="0" maxOccurs ="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="WEIGHT_TERMS_DESCRIPTION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WAREHOUSE_NAME" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WAREHOUSE_LOCATION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WAREHOUSE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="UNIT_OF_MEASURE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="UNDER_DELIVERY_TOLERANCE" type="xs:unsignedByte" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TOTAL_VALUE_IN_MT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TOLERANCE_RANGE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TO_DATE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TERMINAL_YEAR" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TERMINAL_RATE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TERMINAL_MONTH" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TARGET_UOM" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TARGET_QUANTITY" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_YEAR" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_PORT_CODE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_PORT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_PERIOD" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_MONTH" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIP_WEEK" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SF_AGREEMENT_ITEM_ID" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SF_AGREEMENT_ID" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SCHEDULE_LINE" minOccurs="0" maxOccurs ="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="WEIGHT_TERMS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="TRANSIT_DAYS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="TO_DATE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="TERMINAL_MONTH" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIPMENT_YEAR" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIPMENT_WEEK" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIPMENT_MONTH" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIPMENT_BASIS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIP_TO_PARTY" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SHIP_FROM" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SF_PRODUCT_SCHEDULE_ID" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="SELLING_PLANT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="PERIOD_DATES" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="OVER_UNDER" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="FROM_DATE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="DESTINATION_PORT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="DELIVERY_YEAR" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="DELIVERY_MONTH" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                                <xs:element name="CONFIRMED_QTY" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="SAMPLE_CODE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="RATIO_VALUE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="QUANTITY_BASIS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT_NAME" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT_FAMILY" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT_DESCRIPTION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRINT_TERM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRIMARY_PACKING" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRICE_FIXING_LOTS" type="xs:unsignedByte" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PORT_OF_SHIPMENT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PORT_OF_DESTINATION_COUNTRY" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PORT_OF_DESTINATION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLANT_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLANT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PACKING" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="OVER_UNDER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="OVER_DELIVERY_TOLERANCE" type="xs:unsignedByte" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="ORIGIN" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="ORDER_BASIS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="OPS_MODE_OF_TRANSPORT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="OLAM_OFFER_PRICE_PER_UNIT" type="xs:decimal" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="NO_OF_UNIT_SHIPMENT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="MINIMUM_ORDER_QTY" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="LOT_NUMBER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="LOCATION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="FROM_DATE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="FLAT_PRICE" type="xs:decimal" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EXTERNAL_PRODUCT_CODE" type="xs:unsignedLong" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EXCHANGE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="ETD" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DIFFERENTIAL_VALUE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DIFF_PRICE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DIFF_FINAL_PRICE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DESTINATION_PORT_CODE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DECAFFEINATION" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CUSTOMER_MAT_NUMBER" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CROP_YEAR_TO" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CROP_YEAR_FROM" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CROP_YEAR" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONVERTED_VOLUME_IN_MT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_YEAR" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_PERIOD" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_MONTH" type="xs:unsignedByte" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_MATERIAL" type="xs:unsignedLong" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_LOT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_LINE_ITEM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONFIRMED_QTY" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONDITION_PRICING" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CERTIFICATION" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CARGO_NUMBER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="BUYER_SELLER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="BASE_RED_LINE_PRICE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="APPROVAL_TERMS" minOccurs="0" maxOccurs ="1" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="HEADER" minOccurs="0" maxOccurs ="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="WEIGHT_TOLERANCE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WEIGHT_TERMS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WEIGHT_BASIS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WAREHOUSE_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="WAREHOUSE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_TO_YEAR" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_TO_MONTH" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_TO" type="xs:date" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_FROM_YEAR" type="xs:unsignedShort" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_FROM_MONTH" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="VALID_FROM" type="xs:date" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="UNIT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TRANSIT_DAYS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TRADER_EMAIL" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TRADER" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="TO_FIX_AT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SOLD_TO_PARTY_ADDR" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SOLD_TO_PARTY" type="xs:unsignedInt" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIPMENT_BASIS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIP_TO_PARTY_ADDR" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIP_TO_PARTY" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SHIP_FROM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SF_AGREEMENT_NUMBER" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SF_AGREEMENT_ID" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SETTLEMENT_WEIGHT_TYPE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SECONDARY_PACKING" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SCORE_CONTRACT_NUMBER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SAP_CONTRACT_NO" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SAP_CONTRACT_ID" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SAMPLE_REQUIRED" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SALES_ORGANIZATION" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SALES_OFFICE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="SALES_FORCE_REF_NUMBER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="QUANTITY_BASIS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="QUALITY_TYPE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT_TYPE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT_ITEMS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRODUCT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PRICE_UOM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PORT_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PORT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PO_TYPE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PO_NUMBER" type="xs:unsignedInt" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PO_DATE" type="xs:date" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLUTO_CONTRACT_NO" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLANT_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLANT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PLACE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PERIOD_DATES" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PAYMENT_TERM" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PAYMENT_DESCRIPTION" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PAYMENT_BASIS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PARTY_ADDRESS" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="PARTY" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="OTHER_TERMS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="NOT_NEW_BUSINESS" type="xs:boolean" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="NO_OF_UNITS_PACKING" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="NO_OF_DAYS" type="xs:unsignedByte" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="NDE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="MODE_OF_TRANSPORT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="LOCATION_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="IS_CREDIT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="INTERNAL_GRADE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="INCOTERMS_LOCATION" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="INCOTERMS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="FRANCHISE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EXTERNAL_COMMENTS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EXCHANGE_PRODUCT" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EXCHANGE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="EBIT_UPLIFT" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DOCUMENT_TYPE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DIVISION" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="DISTRIBUTION_CHANNEL" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CURRENCY_HEDGE_RATE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_UOM" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_TYPE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_THROUGH_BROKER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_PURPOSE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_LINE_ITEM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_DATE" type="xs:date" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_CURRENCY" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CONTRACT_BASIS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="COMPANY" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="COMMISSION_VALUE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="COMMISSION_UOM" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="COMMISSION_TYPE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CERTIFICATION_NUMBER" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="CANCELLATION_REASON" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="BUY_SELL" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="BROKER_NAME" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="BROKER_CODE" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="AT_SOURCE" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="APPROVAL_TERMS" type="xs:string" minOccurs="0" maxOccurs ="1" />
+                          <xs:element name="ACTIVITY_FLAG" minOccurs="0" maxOccurs ="1" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
