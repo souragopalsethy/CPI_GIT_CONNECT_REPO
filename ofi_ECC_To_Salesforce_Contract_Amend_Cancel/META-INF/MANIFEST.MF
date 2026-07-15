@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 SAP-RuntimeProfile: iflmap
 Bundle-SymbolicName: ofi_ECC_To_Salesforce_Contract_Amend_Cancel
 Bundle-Name: ofi_ECC_To_Salesforce_Contract_Amend_Cancel
-Bundle-Version: 1.0.15
+Bundle-Version: 1.0.16
 Bundle-ManifestVersion: 2
 Origin-Bundle-SymbolicName: ofi_ECC_To_Salesforce_Contract_Amend_Cancel
 SAP-NodeType: IFLMAP
